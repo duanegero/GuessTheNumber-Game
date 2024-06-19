@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+html{
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    background-image: url("Background-image.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    
+}
+.titlepage-header{
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: xx-large;
+    margin-top: 5em;
+}
+.user-guess-container{
+    width: 75%;
+    max-width: 470px;
+    height: 30em;
+    background: linear-gradient(215deg, aqua, rgb(177, 1, 177));
+    color: #fff;
+    margin: 50px auto 50px;
+    border-radius: 33px;
+    padding: 40px 35px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.user-guess-container:hover{
+    background: linear-gradient(215deg, rgb(177, 1, 177), aqua);
+
+}
+.game-rules-container{
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: x-large;
+}
+.user-guess-lable{
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: x-large;
+    color: black;
+}
+.user-guess-input{
+    width: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: x-large;
+    background-color: black;
+    color: white;
+}
+.user-guess-button{
+    display: inline-block;
+    padding: 1em;
+    border: 1px solid #03045e;
+    cursor: pointer;
+    letter-spacing: 3px;
+    border-radius: 15px;
+    font-family: inherit;
+    font-weight: 400;
+    background-color: black;
+    color: white;
+}
+.user-guess-button:hover{
+    box-shadow: .5px 1.5px 50px yellow;
+    background: linear-gradient(180deg, yellow, white);
+    color: black;
+}
+.reset-button{
+    float: right;
+    margin-bottom: 2.5em;
+    border-radius: 50px;
+    background: red;
+    color: #03045e;
+    border: 3px solid black;
+    
+}
+.reset-button:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 100px red;
+    color: white;
+    font-weight: 400;
+    background: linear-gradient(180deg, black, red);
+}
+.answer-container{
+    text-align:center;
+    padding-top: 1em;
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: x-large;
+    letter-spacing: 1.5px;
+}
+.guesses-container{
+    float: left;
+    padding-top: 4em;
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+}

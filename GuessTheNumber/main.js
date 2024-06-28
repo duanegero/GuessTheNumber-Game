@@ -1,4 +1,5 @@
 let moment = require('moment');
+const chalk = require('chalk');
 
 document.addEventListener('DOMContentLoaded', function() {
     function updateTime() {
@@ -10,11 +11,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 let number = Math.floor(Math.random() * 10 + 1); //choosing a random number and assigning it to variable
 let numberOfGuesses = 1; //setting variable to keep count of guesses
-console.log(number); //printing number to the console before game begins 
+console.log(chalk.blue(number)); //printing number to the console before game begins 
 
 function restartGame(){
     number = Math.floor(Math.random() * 10 + 1);
-    console.log(number);
+    console.log(chalk.blue(number));
     numberOfGuesses = 1;
     document.getElementById('result').innerHTML = "";
     document.getElementById('userGuess').value = "";
@@ -24,6 +25,8 @@ function restartGame(){
 
 function checkUserGuess(){
     let guess = document.getElementById('userGuess').value; //assigning user's guess to vairable 
+
+    console.log(chalk.red(guess));
 
     if(guess > 10 || guess < 1){
         document.getElementById('result').innerHTML = `A number <u>between</u> <b>1 - 10</b>`;

@@ -1,3 +1,13 @@
+let moment = require('moment');
+
+document.addEventListener('DOMContentLoaded', function() {
+    function updateTime() {
+        document.getElementById('dateAndTime').innerHTML = moment().format('MMMM Do YYYY, h:mm:ss a');
+    }
+    updateTime();
+    setInterval(updateTime, 1000);
+});
+
 let number = Math.floor(Math.random() * 10 + 1); //choosing a random number and assigning it to variable
 let numberOfGuesses = 1; //setting variable to keep count of guesses
 console.log(number); //printing number to the console before game begins 

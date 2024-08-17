@@ -40,7 +40,7 @@ html{
     font-style: normal;
     font-size: x-large;
     text-align: center;
-    padding: 33px;
+    padding: 3px;
 }
 .user-guess-label{
     font-family: "Teko", sans-serif;
@@ -58,39 +58,50 @@ html{
     background-color: black;
     color: white;
 }
-.user-guess-button{
-    display: inline-block;
-    padding: 1em;
-    border: 1px solid #03045e;
+.reset-button {
+    color: #090909;
+    margin-top: 1em;
+    padding: 1.7sem 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
     cursor: pointer;
-    letter-spacing: 3px;
-    border-radius: 15px;
-    font-family: inherit;
-    font-weight: 400;
-    background-color: black;
-    color: white;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    
+  }
+  
+.reset-button:hover {
+    border: 1px solid white;
+    background: #090909;
+    color: #e8e8e8;
+    border: #090909;
+  }
+  
+.reset-button:active {
+    box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+  }
+  
+.user-guess-button{
+    color: #090909;
+    margin-top: 1em;
+    padding: 1.7sem 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
 }
 .user-guess-button:hover{
-    box-shadow: .5px 1.5px 50px yellow;
-    background: linear-gradient(180deg, yellow, white);
-    color: black;
+    border: 1px solid white;
+    background: #090909;
+    color: #e8e8e8;
+    border: #090909;
 }
-.reset-button{
-    float: right;
-    margin-bottom: 2.5em;
-    border-radius: 50px;
-    background: red;
-    color: #03045e;
-    border: 3px solid black;
-    
-}
-.reset-button:hover{
-    cursor: pointer;
-    box-shadow: 1px 1px 100px red;
-    color: white;
-    font-weight: 400;
-    background: linear-gradient(180deg, black, red);
-}
+
 .answer-container{
     text-align:center;
     padding-top: 1em;

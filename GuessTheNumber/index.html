@@ -13,11 +13,12 @@
     <body>
         <h1 class="titlepage-header">Guess The Number</h1>
         <div class="user-guess-container">
-            <button type="reset" class="reset-button" onclick="restartGame()">RESET</button>
+            
             <p class="game-rules-container">We're going to pick a number from 1 - 10. Let's see how many guesses it takes for you to guess correct.</p>
             <label class="user-guess-label" for="userGuess">Please guess a number:</label>
             <input class="user-guess-input" type="number" autocomplete="off" id="userGuess" min="1" max="10" required>
             <button type="submit" class="user-guess-button" onclick="checkUserGuess()">GUESS</button>
+            <button type="reset" class="reset-button" onclick="restartGame()">RESET</button>
             <p class="answer-container" id="result"></p>
             <p class="guesses-container" id="guesses"></p>
         </div>

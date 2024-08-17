@@ -100,10 +100,10 @@ html{
     letter-spacing: 1.5px;
 }
 .guesses-container{
-    float: left;
-    padding-top: 4em;
+    text-align: center;
+    padding-top: 1%;
     font-family: "Teko", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
-    letter-spacing: 1.5px;
+    letter-spacing: 3px;
 }

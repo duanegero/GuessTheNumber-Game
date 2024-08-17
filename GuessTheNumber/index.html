@@ -8,21 +8,19 @@
         <meta name="author" content="Duane Gero">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
-        
+        <script src="/main.js"></script>
     </head>
     <body>
         <h1 class="titlepage-header">Guess The Number</h1>
         <div class="user-guess-container">
             <button type="reset" class="reset-button" onclick="restartGame()">RESET</button>
             <p class="game-rules-container">We're going to pick a number from 1 - 10. Let's see how many guesses it takes for you to guess correct.</p>
-            <label class="user-guess-lable" for="userGuess">Please guess a number:</label>
+            <label class="user-guess-label" for="userGuess">Please guess a number:</label>
             <input class="user-guess-input" type="number" autocomplete="off" id="userGuess" min="1" max="10" required>
             <button type="submit" class="user-guess-button" onclick="checkUserGuess()">GUESS</button>
             <p class="answer-container" id="result"></p>
             <p class="guesses-container" id="guesses"></p>
         </div>
-        <div class="dateAndTime" id="dateAndTime"></div>
-        <script src="main.js"></script>
-        <script src="dist/main.js"></script>
+        
     </body>
 </html>

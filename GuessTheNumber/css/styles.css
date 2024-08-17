@@ -39,6 +39,8 @@ html{
     font-weight: 200;
     font-style: normal;
     font-size: x-large;
+    text-align: center;
+    padding: 33px;
 }
 .user-guess-label{
     font-family: "Teko", sans-serif;
